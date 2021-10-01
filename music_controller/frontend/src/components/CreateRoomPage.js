@@ -15,8 +15,8 @@ defaultVotes = 2;
     constructor(props){
         super(props);
         this.state={
-            guestCanPause : true,
-            votesToSkip:this.defaultVotes,
+            guestCanPause: this.props.guestCanPause,
+            votesToSkip: this.props.votesToSkip,
         };
     this.handleVotesChanged = this.handleVotesChanged.bind(this);
     this.handleGuestCanPauseChanged = this.handleGuestCanPauseChanged.bind(this);
